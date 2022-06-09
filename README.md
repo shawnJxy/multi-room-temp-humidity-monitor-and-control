@@ -1,6 +1,8 @@
 # Multi-room Temperature and Humidity Monitor and Control (w/ ThingsBoard)
 This repository is created as a part for fulfilling the requirement to the course SEP 769 Cyber Physical Systems. 
 
+A demostration video can be found [here](https://youtu.be/9qk1WlgCuhU).
+
 ## Introduction
 This project focuses on setting up a multi-room temperature and humidity monitoring and control system. 
 An Arduino MKR1000 and a Raspberry Pi was used in this project to collect data from DHT11 sensor and controls the actuators. A TP-Link HS110 and a servo motor were used as the actuators in this project. A circulator fan was connected to the HS110 smart plug whileas the servo motor was used to control a wall switch for a exhaust fan. 
@@ -31,12 +33,17 @@ The ThingsBoard community edition was used to provide the MQTT Broker, data stor
 - [Adafruit CircuitPython DHT](https://github.com/adafruit/Adafruit_CircuitPython_DHT)
 - [Paho MQTT](https://github.com/eclipse/paho.mqtt.python)
 
+## Code
+### Arduino Code
+The sketch used in this project can also be found on [here](https://create.arduino.cc/editor/shawnjxy/407df74e-2717-4218-bc97-e27b5a20a7ff/preview). 
+
 ## System Schematic
 ### System Block Diagram
 ![system_block](https://user-images.githubusercontent.com/92807082/172657020-3608587c-b586-46b1-976d-ac3e25bba319.png)
 
 ### Local Automatic Logic
-![local_control_logic](https://user-images.githubusercontent.com/92807082/172657134-4dba5313-6acd-4f84-a766-8f93ed2fe600.png)
+![local_control_logic](https://user-images.githubusercontent.com/92807082/172954502-f8ae474c-7f46-45b6-a02a-756d40392679.png)
 
 ### Cloud Control Logic
-![cloud_control_logic](https://user-images.githubusercontent.com/92807082/172657167-14838662-7175-4396-9796-46cb4ff24696.png)
+![cloud_control_logic](https://user-images.githubusercontent.com/92807082/172954483-6ec13849-fb4e-4e6e-abb3-db98ba5b8e54.png)
+
